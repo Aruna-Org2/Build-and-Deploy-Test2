@@ -42,11 +42,11 @@ pipeline {
                 script {
                     echo 'Registering the metadata...'
                     def artifactId = registerBuildArtifactMetadata(
-                        name: "My TestApp",
+                        name: "My TestApp2",
                         version: "1.0.0",
                         type: "docker",
                         url: "http://localhost:1112",
-                        digest: "13518864707039346163693937",
+                        digest: "12518864707039346163693937",
                     )
                     echo "Artifact Id is: ${artifactId}"
                     env.ARTIFACT_ID = artifactId
